@@ -5,16 +5,16 @@ from time import sleep
 try:
     with Booking(teardown=True) as bot:
         bot.land_first_page()
-        # bot.change_currency(currency='USD')
-        # bot.select_place_to_go("New York")
-        # bot.select_dates(checkin_date='2021-11-15'
-        #                  , checkout_date='2021-11-20')
-        # bot.select_adults(5)
-        # bot.click_search()
-        # bot.filterbooking()
-        # bot.refresh()
-        # bot.report_results()
-        bot.testClipboard()
+        bot.change_currency(currency='USD')
+        bot.select_place_to_go("New York")
+        bot.select_dates(checkin_date='2022-03-20'
+                         , checkout_date='2022-03-25')
+        bot.select_adults(5)
+        bot.click_search()
+        bot.filterbooking()
+        bot.refresh()
+        bot.report_results()
+        # bot.testClipboard()
 
 
 

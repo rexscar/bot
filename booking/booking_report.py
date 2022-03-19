@@ -19,15 +19,15 @@ class BookingReport:
             hotel_name = deal_box.find_element(
                 By.CSS_SELECTOR, 'div[data-testid="title"]'
             ).get_attribute('innerHTML').strip()
-            hotel_price = deal_box.find_element(
-                By.CSS_SELECTOR, 'div[data-testid="price-and-discounted-price"]'
-            )
-            hotel_score = deal_box.find_element(
-                By.CLASS_NAME, "_9c5f726ff bd528f9ea6"
-            ).get_attribute('innerHTML')
+            # hotel_price = deal_box.find_element(
+            #     By.CSS_SELECTOR, 'div[data-testid="price-and-discounted-price"]'
+            # ).get_attribute('innerHTML').strip()
+            # hotel_score = deal_box.find_element(
+            #     By.CLASS_NAME, "_9c5f726ff bd528f9ea6"
+            # ).get_attribute('innerHTML')
             # print(hotel_score)
             collection.append(
-                [hotel_name, hotel_score]
+                [hotel_name]
             )
         return collection
 
